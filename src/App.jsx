@@ -7,6 +7,7 @@ import Education from './components/Education';
 import Contact from './components/Contact';
 import portfolioData from './data/data.json';
 import Skills from './components/Skills';
+import ReactGA from 'react-ga4';
 import { FileText, Terminal, Play, Loader, Server, CheckCircle2 } from 'lucide-react';
 
 function App() {
@@ -19,12 +20,23 @@ function App() {
   const [cacheMessage, setCacheMessage] = useState(""); 
   
   const loadBalancerRef = useRef(null);
+  useEffect(() => {
+    ReactGA.initialize("G-SPCST0SYRE");
+    // Send a pageview event for the initial load
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+  }, []);
 
   const handleRouteRequest = (routeId) => {
     if (activeRoute === routeId) return;
 
     setIsRouting(true);
     setActiveRoute(routeId);
+
+    ReactGA.event({
+      category: "Load Balancer",
+      action: "Module Routed",
+      label: routeId // This will log 'experience', 'projects', etc.
+    });
 
     setTimeout(() => {
       if (loadBalancerRef.current) {
