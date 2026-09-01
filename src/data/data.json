@@ -10,70 +10,69 @@
   "infrastructure_copy": {
     "dns_resolution": "Requesting mokshithsaigadela.com... resolving to IP... Handshake successful.",
     "load_balancer_prompt": "Traffic detected. Routing to requested module...",
-    "cache_hit": "Edge Location Cache Hit: 12ms",
+    "cache_hit": "Edge Location Cache Hit: 3ms",
     "cache_miss": "Cache Miss -> Querying Origin Server...",
     "security_waf": "WAF Check: Verifying human request...",
     "deploying": "Running CI/CD Pipeline -> Build -> Deploying Impact"
   },
   "hero": {
     "headline": "Hello! I'm Mokshith.",
-    "sub_headline": "I am a Software Engineer working with distrubuted systems.",
-    "mission": "Using technology to make the world a better place, and to develop better technology."
+    "sub_headline": "I build distributed systems because I have trust issues with single points of failure. ☁️",
+    "mission": "Making products that my 7 year old brain thought impossible."
   },
   "experience": [
     {
       "id": "exp_1",
-      "company": "IJM Corporation",
+      "company": "MyEDMaster",
       "role": "Software Engineer",
-      "duration": "Aug 2022 - Jun 2024",
-      "description": "Migrated 5+ legacy monolithic services to a Microservices architecture on Kubernetes (EKS) utilizing custom Docker containers and Helm charts. Built scalable backend REST APIs, optimized complex PostgreSQL queries with Redis caching, and engineered an event-driven data pipeline leveraging Apache Kafka to process 10,000+ daily telemetry events.",
-      "tech_stack": ["Node.js", "TypeScript", "Kubernetes (EKS)", "AWS Lambda", "Kafka", "Terraform", "PostgreSQL", "Redis"]
+      "duration": "Jan 2026 - May 2026",
+      "description": "Prompt engineering meets financial engineering. I built an AI-powered financial strategist using Django and React, trimming OpenAI context fat to serve responses in under 2 seconds. Containerized the deployment pipeline on AWS because the only thing that should crash is the market, not my servers.",
+      "tech_stack": ["React", "Django", "OpenAI", "AWS EC2", "Jenkins", "AWS RDS", "Docker"]
     },
     {
       "id": "exp_2",
+      "company": "IJM Corporation",
+      "role": "Software Engineer",
+      "duration": "Aug 2022 - Jun 2024",
+      "description": "Evicted a legacy monolith and rehoused it in Kubernetes (EKS). Optimized the data layer to slash report generation from a 'grab a coffee' 3 minutes to a 10-second blink. Built a Kafka pipeline to ingest 10,000+ daily telemetry events because I prefer my data streaming, not trickling.",
+      "tech_stack": ["Node.js", "TypeScript", "Kubernetes (EKS)", "AWS Lambda", "Kafka", "Terraform", "PostgreSQL", "Redis"]
+    },
+    {
+      "id": "exp_3",
       "company": "Ditto Insurance",
       "role": "Software Engineer",
       "duration": "Feb 2022 - Jun 2022",
-      "description": "Automated API contract validation for the JavaScript frontend utilizing Python, PyTest, and OpenAPI/Swagger specifications, reducing staging environment crashes by 40%. Engineered Python data pipelines to extract and parse unstructured JSON telemetry from Jenkins and Docker logs.",
-      "tech_stack": ["Python", "PyTest", "OpenAPI", "Jenkins", "Docker"]
+      "description": "Played referee between frontend and backend payloads. Engineered an automated API contract validation system that slashed staging crashes by 40% effectively writing insurance policies for our own code. Also built Python pipelines to tame chaotic Jenkins logs into readable insights.",
+      "tech_stack": ["Python", "PyTest", "OpenAPI/Swagger", "Jenkins", "Docker"]
     }
   ],
   "projects": [
     {
       "id": "proj_1",
-      "title": "Learning-Based Cache Optimization",
-      "concept": "Predict memory access patterns across trace datasets containing over 1 million requests.",
-      "architecture": "Trained a Gated Recurrent Unit (GRU) sequence model using PyTorch and engineered feature extraction pipelines using Pandas.",
-      "impact": "Increased the cache hit rate by 12% compared to standard LRU baselines.",
-      "github_link": "https://github.com/AlexSutila/Learning-Based-Cache-Admission",
-      "image_placeholder": null
-    },
-    {
-      "id": "proj_2",
       "title": "Custom Scheduling Operator",
-      "concept": "Create intelligent scheduling logic to manage and optimize cluster resources.",
-      "architecture": "Engineered a production-grade Kubernetes operator in Go using CRDs and admission webhooks. Orchestrated full build and deployment pipeline with Docker and Make.",
-      "impact": "Reconciled 5,000 pods and reduced compute costs by 30% through intelligent scheduling.",
+      "concept": "Sending Kubernetes to scheduling school.",
+      "architecture": "Default schedulers are fine but I wanted brilliant. I wrote a custom Go operator using CRDs and admission webhooks to hardwire smarter resource logic directly into the cluster.",
+      "impact": "Orchestrated a massive fleet of 5,000 pods and cut compute costs by 30 percent. It turns out that playing Tetris with server resources actually pays off!",
       "github_link": "https://github.com/mokshith1618/CustomControllerOperator",
       "image_placeholder": null
     },
     {
       "id": "proj_3",
-      "title": "Decentralized Key-Value Store",
-      "concept": "Design a highly consistent, fault-tolerant decentralized storage system.",
-      "architecture": "Engineered a Go-based gossip protocol over gRPC for decentralized failure detection across a Docker-containerized cluster. Utilized Prometheus and Grafana for metrics.",
-      "impact": "Processed 15,000+ ops/sec and restored consistency in <100ms during simulated network partitions using CRDTs.",
-      "github_link": null,
-      "image_placeholder": "/assets/kv-store-illustration.svg"
+      "title": "Learning-Based Cache Optimization",
+      "concept": "Giving cache memory a crystal ball to predict the future.",
+      "architecture": "I trained a PyTorch sequence model on millions of server requests. It learns complex memory access patterns that standard eviction algorithms completely ignore.",
+      "impact": "Outperformed traditional cache policies and boosted the hit rate by 12 percent. Who knew that teaching infrastructure to read minds would make it so much faster?",
+      "github_link": "https://github.com/AlexSutila/Learning-Based-Cache-Admission",
+      "image_placeholder": null
     },
     {
-      "id": "proj_4",
-      "title": "Financial Education Platform",
-      "concept": "Process and dynamically render user spending data to deliver personalized financial insights.",
-      "architecture": "Full-stack React and Django application integrating OpenAI APIs. Orchestrated a Jenkins CI/CD deployment pipeline to AWS EC2.",
-      "impact": "Delivered insights with <2s latency, accelerated API response efficiency by 1.5x, and achieved zero-downtime updates via JWT session management.",
+      "id": "proj_2",
+      "title": "Decentralized Key-Value Store",
+      "concept": "Building a distributed database that thrives in pure chaos.",
+      "architecture": "I engineered a custom Go gossip protocol talking over gRPC on a Docker swarm. When nodes drop or the network splits, the system simply shrugs and heals itself using CRDTs.",
+      "impact": "Crushed 15,000 operations per second and recovered from simulated network outages in under 100 milliseconds. Because your storage layer should never need a sick day.",
       "github_link": null,
-      "image_placeholder": "/assets/finance-platform-illustration.svg"
+      "image_placeholder": "/assets/kv-store-illustration.svg"
     }
   ],
   "education": {
