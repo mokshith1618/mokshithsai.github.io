@@ -56,7 +56,7 @@ function App() {
         : `> ${portfolioData.infrastructure_copy.cache_miss}`
     );
 
-    const simulatedDelay = isCacheHit ? 1000 : 1800;
+    const simulatedDelay = isCacheHit ? 700 : 900;
 
     setTimeout(() => {
       setIsRouting(false);
